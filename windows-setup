@@ -4,16 +4,16 @@ How-to setup this example in your Windows LOCAL machine:
 This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
 
 1. Go to https://ollama.com/ and download it.
-  Sign up with your email to get notified of new updates if you want to.
-  Select Windows (Preview) and download it to your Windows machine.
-
-2. Run the OllamaSetup.exe file on your Windows machine. Approx: 198MB size.
+   Sign up with your email to get notified of new updates if you want to.
+   Select Windows (Preview) and download it to your Windows machine.
+2. Run the OllamaSetup.exe file on your Windows machine.
 3. Follow the installation steps. Click Install to extract files and it will be installed in your machine.
 4. To do a quick check to see if it was properly installed go to a CMD or Powershell and type:
    
   > ollama
 
   You should see something like this:
+
   Usage:
     ollama [flags]
     ollama [command]
@@ -37,14 +37,16 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
   Use "ollama [command] --help" for more information about a command.
 
-5. Next step is to download the AI model or models that we are going to be using for this example.
+5. Next step is to download the AI model or models that we are going to be using for this Chatbot specific example.
    If you want to see the complete list of ollama.ai models go to: https://ollama.com/library
 
-   We are going to have to Cooks, the expert one will be using latest llama3 ai model, the novice onw will be using a llama2 ai model.
-   Diferences are in the number of parameters each of them are using. 
+   We are going to have 2 Cooks, the expert one will be using latest llama3 AI model, the novice one will be using the llama2 AI model.
+   Diferences are in the number of parameters each of them are using and response quality.
    In this example we want to give more expertise to the expert cook than to the novice cook.
 
-   From the CMD / Powershell run these 2 below commands. Make sure you at least have 10GB disk free space to allocate both.
+   From the CMD / Powershell run these 2 below commands. 
+   Make sure you at least have 10GB disk free space to allocate both.
+   
    The 'run' command will try to run the model locally where you can start testing it by prompting.
    If the model isn´t in your local installation it will be downloaded first (pulling manifest ...)
    It will take some time to download the models to your local installation.
@@ -59,18 +61,19 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    <You should see the answer>
    >>> /bye
 
-6. Use one of your python coding tools and create a new python proyect and call it 'Chatbot_Cooking' for example.
-7. Within the project create 2 different Modelfiles that will be used by the ai models to have domain specific answers, in this case related to Cooking.
+6. Use one of your preferable Python coding editor and create a new python project and call it 'Chatbot_Cooking' for example.
+7. Within the project create 2 different Modelfiles that will be used by the AI models to have domain specific answers, in this case related to Cooking.
 
-   Modelfiles are used by the ai models to parametrize your ai models and make them more domain specific. For example, my expert model file is going to be more precise since it will be using llama3, and it will also contain a description of what that ai model is all about.
+   Modelfiles are used by the AI models to parametrize your AI models making them domain specific. 
+   For example, my 'expert' model file is going to be more precise since it will be using llama3 and it will contain higher temperature value.
+   The 'novice' model by the other hand will be less precise since it will be using llama2 and a lower temperature value.
    
-   See examples, notice that this Chatbot will answer in Spanish:
+   See examples at /artifacts folder for the 2 different models. They follow in here anyway.
      
    Model file 'Modelfile_expert' for the expert cook:
 
       FROM llama3
       # set the temperature to 1 [higher is more creative, lower is more coherent]
-      # PARAMETER temperature 0.75 
       PARAMETER temperature 1
       
       # Tamaño de la ventana de contexto para controlar el número de tokens que el modelo LLM puede usar como contexto para generar el siguiente token
@@ -90,7 +93,6 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
       FROM llama2
       # set the temperature to 1 [higher is more creative, lower is more coherent]
-      # PARAMETER temperature 0.75 
       PARAMETER temperature 0.75
       
       # Tamaño de la ventana de contexto para controlar el número de tokens que el modelo LLM puede usar como contexto para generar el siguiente token
@@ -105,22 +107,24 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
       Te llamas Juan y eres el gran aprendiz de la cocina moderna y vanguardista. Siempre vas a contestar en español o castellano.
       """
 
-7. Now run from your CMD/Powershell console the following commands.
+7. Now, run from your CMD/Powershell console the following commands.
 
    > ollama create alex_experto -f ./Modelfile_experto
-     We are creating a reference to the llama3 existing model but using the expert model file defined.
+     We are creating a reference to the llama3 existing model but using the expert model file defined, so we are making AI model to be Cooking domain specific, with an expert cook.
 
    > ollama create juan_aprendiz -f ./Modelfile_aprendiz 
-     We are creating a reference to the llama2 existing model but using the novice model file defined.
+     We are creating a reference to the llama2 existing model but using the novice model file defined, so we are making AI model to be Cooking domain specific, with a novice cook.
 
-8. If no issues you can list all the models using command > ollama list
+8. If no issues found, you can list all the models using command:
 
-   You should see something like this:
-    NAME                    ID              SIZE    MODIFIED
-    juan_aprendiz:latest    643daf25f2e1    3.8 GB  2 days ago
-    alex_experto:latest     3e08413ffd88    4.7 GB  2 days ago
-    llama2:latest           78e26419b446    3.8 GB  8 days ago
-    llama3:latest           a6990ed6be41    4.7 GB  2 weeks ago
+    > ollama list
+
+     You should see something like this:
+      NAME                    ID              SIZE    MODIFIED
+      juan_aprendiz:latest    643daf25f2e1    3.8 GB  2 days ago
+      alex_experto:latest     3e08413ffd88    4.7 GB  2 days ago
+      llama2:latest           78e26419b446    3.8 GB  8 days ago
+      llama3:latest           a6990ed6be41    4.7 GB  2 weeks ago
 
 9. Now the models are ready, and you can, as before, run the specific models.
 
@@ -135,13 +139,17 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     >>> Send a message (/? for help)
 
 10. Next step is to jump into the bot creation and for that we will go to Telegram and search for BotFather bot.
-    In there send the command /newbot
-    Give it a name, something different to the one we created, it can be something like Ejemplo_Recetas_AI or any other name you like.
-    When creating the name it will ask for the bot name which usually ends with _bot, so give it the name Ejemplo_Recetas_AI_bot.
-    Once the bot is created a new telegram token will be generated for that bot.
-    Please copy all the information and paste it into your notepad and save the document, since that information will be used later on from the Python program.
+
+    1. In there send the command /newbot
+    2. Give it a name, something different to the one we created, it can be something like Ejemplo_Recetas_AI or any other name you like.
+    3. When creating the name it will ask for the bot name which usually ends with _bot, so give it the name Ejemplo_Recetas_AI_bot.
+    
+    Once the bot is created a new telegram token API will be generated for that bot.
+
+    4. Please copy all the information and paste it into your notepad editor and save the document, since that information will be used later on from the Python program.
 
 11. Within the BotFather bot we are going to be creating also the different commands the user will be using from our Cooking bot.
+
     Type the following command in the BotFather
     /setcommands
     1. Select the new bot you are going to be sending the commands.
