@@ -121,4 +121,41 @@ Note that this process was tested on a Windows LOCAL machine which serves as the
     llama2:latest           78e26419b446    3.8 GB  8 days ago
     llama3:latest           a6990ed6be41    4.7 GB  2 weeks ago
 
-9. 
+9. Now the models are ready and you can as before run the specific ones.
+   > ollama run alex_experto
+   >>> Hi, who are you?
+    Hola! Me llamo Alex y soy un sistema experto en recetas y nutrición. Soy el gran evangelista de la cocina moderna
+    y vanguardista. Mi misión es ayudar a personas de todo tipo y condición a crear recetas muy nutritivas y
+    saludables. Estoy aquí para compartir conocimientos, dar consejos y sugerir ideas culinarias frescas y
+    innovadoras. ¿En qué puedo ayudarte hoy?
+    
+    >>> Send a message (/? for help)
+
+10. Next step is to jump into the bot creation.
+    For that we will go to Telegram and search for BotFather
+    In there type /newbot
+    Give it a name, something different to the one we created, it can be something like Ejemplo_Recetas_AI or any other name you like
+    When creating the name it will ask for the bot name which usually ends with _bot, so give it the name Ejemplo_Recetas_AI_bot
+    Once the bot is created a new telegram token will be generated for that bot.
+    Please copy all the information and paste it into your notepad and save the document.
+    You will need that information later on in your Python program.
+
+11. Within the BotFather we are going to be creating also the different commands the user will be using from the new bot.
+    1. Create a file called commands.txt in your project.
+    2. Add the following to the file and save it.
+
+    command.txt 
+      quien_soy - Introducción al Chatbot de Recetas y Nutrición de Inteligencia Artificial Alex Rivera
+      listado_recetas - Listar algunas recetas de ejemplo que puedes preguntarle al Chatbot
+      preguntar - Pregúntame por alguna Receta u otro asunto que prefieras
+      cocineros_disponibles - Listado de Cocineros de Inteligencia Artificial disponibles
+      seleccionar_cocinero - Dime que Cocinero de Inteligencia Artificial quieres utilizar
+    
+    Then mark all the lines from the file and copy them into the clipboard.
+
+    Type the following command in the BotFather
+    /setcommands
+      1. Select your new bot.
+      2. Copy from the clipboard all the lines and send it to the bot.
+      3. It should say it commands have been properly set.
+    
