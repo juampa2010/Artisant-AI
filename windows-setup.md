@@ -1,4 +1,4 @@
-- Start process - 
+Start process 
 ----
 How-to setup this example in your Windows LOCAL machine:
 This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
@@ -38,6 +38,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     -v, --version   Show version information
 
   Use "ollama [command] --help" for more information about a command.
+  
 ----
 4. Next step is to download the AI model or models that we are going to be using for this Chatbot specific example.
    If you want to see the complete list of ollama.ai models go to: https://ollama.com/library
