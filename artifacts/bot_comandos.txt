@@ -1,0 +1,5 @@
+quien_soy - Introducción al Chatbot de Recetas y Nutrición de Inteligencia Artificial Alex Rivera
+listado_recetas - Listar algunas recetas de ejemplo que puedes preguntarle al Chatbot
+preguntar - Pregúntame por alguna Receta u otro asunto que prefieras
+cocineros_disponibles - Listado de Cocineros de Inteligencia Artificial disponibles
+seleccionar_cocinero - Dime que Cocinero de Inteligencia Artificial quieres utilizar
