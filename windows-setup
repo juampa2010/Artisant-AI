@@ -362,7 +362,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
         # El bot comunica en éste caso utilizando el mecanismo de polling (getUpdates), es decir le pregunta constantemente a Telegram si hay nuevos mensajes
         bot.infinity_polling() 
 
-13. Runt the program and if not errors you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
+13. Run the program and if not errors you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
     Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex...
 
 14. Test it from your Telegram bot.
