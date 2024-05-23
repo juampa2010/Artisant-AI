@@ -66,11 +66,12 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    
    If you want to see the complete list of ollama.ai models go to: https://ollama.com/library
 
-   We are going to have 2 Cooks, the expert one will be using latest llama3 AI model, the novice one will be using the llama2 AI model.
+   We are going to have 2 Cooks, the **expert** one will be using latest llama3 AI model, the **novice** one will be using the llama2 AI model.
 
    Diferences are in the number of parameters each of them are using and response quality.
    
    In this example we want to give more expertise to the expert cook than to the novice cook.
+
 
    From the CMD / Powershell run these 2 below commands.
    
