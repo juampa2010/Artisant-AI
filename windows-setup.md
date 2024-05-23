@@ -142,14 +142,12 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
   For example:
    **ollama run alex_experto**
-   >>> Hi, who are you?
-    Hola! Me llamo Alex y soy un sistema experto en recetas y nutrición. Soy el gran evangelista de la cocina moderna
+    Prompt: Hi, who are you?
+    Answer: Hola! Me llamo Alex y soy un sistema experto en recetas y nutrición. Soy el gran evangelista de la cocina moderna
     y vanguardista. Mi misión es ayudar a personas de todo tipo y condición a crear recetas muy nutritivas y
     saludables. Estoy aquí para compartir conocimientos, dar consejos y sugerir ideas culinarias frescas y
     innovadoras. ¿En qué puedo ayudarte hoy?
     
-    >>> Send a message (/? for help)
-
 ----
 
 10. Next step is to jump into the bot creation and for that we will go to Telegram and search for BotFather bot.
