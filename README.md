@@ -29,7 +29,7 @@ See what I can do for you in the 'Menu' of commands. Icon at the bottom left.
 
 -----
 
-
+To setup this Example in Windows go and follow **windows-setup.md** content.
 
 
 
