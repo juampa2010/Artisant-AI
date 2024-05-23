@@ -16,21 +16,21 @@ Welcome to my Recipes and Healthy Nutrition Chatbot!
 I am an Artificial Intelligence System and I can assist you with various tasks.
 I have 2 types of Cooks that can assist you, and by default, I respond as Alex:
 
-**Alex**: An expert cook who takes longer to respond but is more precise in his answers.
-
-**Juan**: A novice who takes less time to respond but is less precise in his answers.
+  **Alex**: An expert cook who takes longer to respond but is more precise in his answers.
+  
+  **Juan**: A novice who takes less time to respond but is less precise in his answers.
 
 See what I can do for you in the 'Menu' of commands. Icon at the bottom left.
 
-**/quien_soy**: Chatbot overview
-
-**/listado_recetas**: Example recipes
-
-**/preguntar**: For a recipe or whatever you want
-
-**/cocineros_disponibles**: List of available AI Cooks.
-
-**/selecionar_cocinero**: Select an available AI Cook.
+  **/quien_soy**: Chatbot overview
+  
+  **/listado_recetas**: Example recipes
+  
+  **/preguntar**: For a recipe or whatever you want
+  
+  **/cocineros_disponibles**: List of available AI Cooks.
+  
+  **/selecionar_cocinero**: Select an available AI Cook.
 
 
 
