@@ -10,7 +10,7 @@ Who am I? **/quien_soy**
 
 Welcome to my Recipes and Healthy Nutrition Chatbot!. I am an Artificial Intelligence System and I can assist you with various tasks. I have 2 types of Cooks that can assist you, and by default, I respond as Alex:
 
-  **Alex**: An expert cook who takes longer to respond but is more precise in his answers.
+ &nbsp;**Alex**: An expert cook who takes longer to respond but is more precise in his answers.
   
   **Juan**: A novice who takes less time to respond but is less precise in his answers.
 
