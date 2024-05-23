@@ -28,7 +28,7 @@ See what I can do for you in the 'Menu' of commands. Icon at the bottom left.
 
 &nbsp;&nbsp; **/selecionar_cocinero**: Select an available AI Cook.
 
-=================================
+-----
 
 
 
