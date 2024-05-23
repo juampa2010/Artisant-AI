@@ -1,14 +1,16 @@
-- Start process - 
-
+Start process
+----
 How-to setup this example in your Windows LOCAL machine:
 This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
 
 1. Go to https://ollama.com/ and download it.
    Sign up with your email to get notified of new updates if you want to.
    Select Windows (Preview) and download it to your Windows machine.
-2. Run the OllamaSetup.exe file on your Windows machine.
-3. Follow the installation steps. Click Install to extract files and it will be installed in your machine.
-4. To do a quick check to see if it was properly installed go to a CMD or Powershell and type:
+----
+3. Run the OllamaSetup.exe file on your Windows machine.
+   Follow the installation steps. Click Install to extract files and it will be installed in your machine.
+----
+5. To do a quick check to see if it was properly installed go to a CMD or Powershell and type:
    
   > ollama
 
