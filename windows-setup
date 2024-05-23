@@ -142,23 +142,18 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     You will need that information later on in your Python program.
 
 11. Within the BotFather we are going to be creating also the different commands the user will be using from the new bot.
-    1. Create a file called commands.txt in your project.
-    2. Add the following to the file and save it.
-
-    command.txt 
-      quien_soy - Introducción al Chatbot de Recetas y Nutrición de Inteligencia Artificial Alex Rivera
-      listado_recetas - Listar algunas recetas de ejemplo que puedes preguntarle al Chatbot
-      preguntar - Pregúntame por alguna Receta u otro asunto que prefieras
-      cocineros_disponibles - Listado de Cocineros de Inteligencia Artificial disponibles
-      seleccionar_cocinero - Dime que Cocinero de Inteligencia Artificial quieres utilizar
-    
-    Then mark all the lines from the file and copy them into the clipboard.
-
     Type the following command in the BotFather
     /setcommands
-      1. Select your new bot.
-      2. Copy from the clipboard all the lines and send it to the bot.
-      3. It should say it commands have been properly set.
+    1. Select the new bot you are going to be sending the commands.
+
+    It should respond with:
+    OK. Send me a list of commands for your bot. Please use this format:
+    command1 - Description
+    command2 - Another description
+    Send /empty to keep the list empty.
+
+    2. Copy all the lines from the bot_comandos.txt file in the BotFather and send it.
+    3. It should respond with  OK it commands have been properly set.
 
 12. Next step is to create a windows environment variable that will contain the Token API that was generated for the new bot.
     That variable will be used from the Python program. This is just for not making visible the token in your python program.
