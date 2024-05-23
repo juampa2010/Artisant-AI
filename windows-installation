@@ -159,3 +159,7 @@ Note that this process was tested on a Windows LOCAL machine which serves as the
       2. Copy from the clipboard all the lines and send it to the bot.
       3. It should say it commands have been properly set.
     
+12. Great!, now we have the AI part setup and the Bot created.
+    What is next is to create the Python program that will interact with both the Bot and the AI models.
+    1. Go to your code editor and create a file and call it ai_recetas.py
+    2. Copy the following code:
