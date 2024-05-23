@@ -224,11 +224,11 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     
     1. Go to the list of commands and you should see the ones we set in BotFather.
        
-    2. Try sending **/quien_soy** and see if you get a reply
+       Try sending **/quien_soy** and see if you get a reply
     
-    If ypu get a reply, then all seems to be properly setup, and working fine, and you can continue testing with the rest of the commands.
+       If you get a reply, then all seems to be properly setup, and working fine, and you can continue testing with the rest of the commands.
     
-    Try sending **/preguntar** and after that ask for a new Cooking recipe.
+       Try sending **/preguntar** and after that ask for a new Cooking recipe.
 
 16. Wait a minute or so to obtain the response from the conversation AI model.
     
