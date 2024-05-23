@@ -107,11 +107,11 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
 7. Now run from your CMD/Powershell console the following commands.
 
-   Expert cook - a reference to the llama3 model will be created using the expert model file
    > ollama create alex_experto -f ./Modelfile_experto
+     We are creating a reference to the llama3 existing model but using the expert model file defined.
 
-   Novice cook - a reference to the llama2 model will be created using the expert model file
-   > ollama create juan_aprendiz -f ./Modelfile_aprendiz
+   > ollama create juan_aprendiz -f ./Modelfile_aprendiz 
+     We are creating a reference to the llama2 existing model but using the novice model file defined.
 
 8. If no issues you can list all the models using command > ollama list
 
@@ -122,7 +122,9 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     llama2:latest           78e26419b446    3.8 GB  8 days ago
     llama3:latest           a6990ed6be41    4.7 GB  2 weeks ago
 
-9. Now the models are ready and you can as before run the specific ones.
+9. Now the models are ready, and you can, as before, run the specific models.
+
+  For example:
    > ollama run alex_experto
    >>> Hi, who are you?
     Hola! Me llamo Alex y soy un sistema experto en recetas y nutrición. Soy el gran evangelista de la cocina moderna
@@ -132,16 +134,14 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     
     >>> Send a message (/? for help)
 
-10. Next step is to jump into the bot creation.
-    For that we will go to Telegram and search for BotFather
-    In there type /newbot
-    Give it a name, something different to the one we created, it can be something like Ejemplo_Recetas_AI or any other name you like
-    When creating the name it will ask for the bot name which usually ends with _bot, so give it the name Ejemplo_Recetas_AI_bot
+10. Next step is to jump into the bot creation and for that we will go to Telegram and search for BotFather bot.
+    In there send the command /newbot
+    Give it a name, something different to the one we created, it can be something like Ejemplo_Recetas_AI or any other name you like.
+    When creating the name it will ask for the bot name which usually ends with _bot, so give it the name Ejemplo_Recetas_AI_bot.
     Once the bot is created a new telegram token will be generated for that bot.
-    Please copy all the information and paste it into your notepad and save the document.
-    You will need that information later on in your Python program.
+    Please copy all the information and paste it into your notepad and save the document, since that information will be used later on from the Python program.
 
-11. Within the BotFather we are going to be creating also the different commands the user will be using from the new bot.
+11. Within the BotFather bot we are going to be creating also the different commands the user will be using from our Cooking bot.
     Type the following command in the BotFather
     /setcommands
     1. Select the new bot you are going to be sending the commands.
@@ -153,14 +153,18 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     Send /empty to keep the list empty.
 
     2. Copy all the lines from the bot_comandos.txt file in the BotFather and send it.
-    3. It should respond with  OK it commands have been properly set.
+    3. It should respond with Success! Command list updated. /help
+
+  So, now if you go back to your new bot it should contain a Menu with all the commands.
 
 12. Next step is to create a windows environment variable that will contain the Token API that was generated for the new bot.
-    That variable will be used from the Python program. This is just for not making visible the token in your python program.
+    
+    That variable will be used from the Python program. This is just for avoiding to make visible the API token in your Python program.
     1. Go to your windows environment variables and create your BOT_TOKEN variable.
     2. BOT_TOKEN = <your new telegram api content>
 
-12. Great!, now we have the AI part and the Telegram bot setup.
+12. Great!!, now we have the AI part and the Telegram bot setup.
+    
     Next is to create the Python program that will interact with both the Telegram bot and the AI models.
 
     1. Go to your best python code editor and create a file and call it recetas_ai.py. 
@@ -169,13 +173,16 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     2. Make sure that for the imports you have them installed in your python local installation.
        Use the command pip install <import_name> if not.
     
-13. Run the program and if not errors you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
-    Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex...
+13. Run the program, and if no errors, you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
+    
+    "Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex..."
 
 14. Test it from your Telegram bot.
-    Go to the list of commands and you should see the ones we set in BotFather.
-    Try sending /quien_soy and see if you get a reply
-    If yes, then all seems to be properly setup and you can continue testing with the rest of the commands.
+    
+    1. Go to the list of commands and you should see the ones we set in BotFather.
+    2. Try sending /quien_soy and see if you get a reply
+    
+    If ypu get a reply, then all seems to be properly setup, and working fine, and you can continue testing with the rest of the commands.
     Try sending /preguntar and after that ask for a new Cooking recipe.
 
 - End Process -
