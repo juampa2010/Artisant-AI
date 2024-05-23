@@ -1,7 +1,6 @@
 FROM llama3
 
 # set the temperature to 1 [higher is more creative, lower is more coherent]
-# PARAMETER temperature 0.75 
 PARAMETER temperature 1
 
 # Tamaño de la ventana de contexto para controlar el número de tokens que el modelo LLM puede usar como contexto para generar el siguiente token
