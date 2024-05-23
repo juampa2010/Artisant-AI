@@ -30,20 +30,32 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
        ollama [command]
    
      Available Commands:
+   
        serve       Start ollama
+   
        create      Create a model from a Modelfile
+   
        show        Show information for a model
+   
        run         Run a model
+   
        pull        Pull a model from a registry
+   
        push        Push a model to a registry
+   
        list        List models
+   
        ps          List running models
+   
        cp          Copy a model
+   
        rm          Remove a model
+   
        help        Help about any command
    
      Flags:
        -h, --help      help for ollama
+   
        -v, --version   Show version information
    
      Use "ollama [command] --help" for more information about a command.
@@ -60,7 +72,8 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    
    In this example we want to give more expertise to the expert cook than to the novice cook.
 
-   From the CMD / Powershell run these 2 below commands. 
+   From the CMD / Powershell run these 2 below commands.
+   
    Make sure you at least have 10GB disk free space to allocate both.
    
    The 'run' command will try to run the model locally where you can start testing it by prompting.
@@ -69,14 +82,20 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    
    It will take some time to download the models to your local installation.
 
-   > ollama run llama3 
+   > ollama run llama3
+   
    Sample prompt: >>> Hi, why water is transparent?
-   <You should see the answer>
+   
+   <You should see an answer>
+      
    >>> /bye
 
    > ollama run llama2
+   
    Sample prompt: >>> Hi, why makes rainbow show those colors?
+   
    <You should see the answer>
+      
    >>> /bye
 
 ----
