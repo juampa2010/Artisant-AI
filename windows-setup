@@ -158,8 +158,14 @@ Note that this process was tested on a Windows LOCAL machine which serves as the
       1. Select your new bot.
       2. Copy from the clipboard all the lines and send it to the bot.
       3. It should say it commands have been properly set.
-    
-12. Great!, now we have the AI part setup and the Bot created.
-    What is next is to create the Python program that will interact with both the Bot and the AI models.
-    1. Go to your code editor and create a file and call it ai_recetas.py
+
+12. Next step is to create a windows environment variable that will contain the Token API that was generated for the new bot.
+    That variable will be used from the Python program. This is just for not making visible the token in your python program.
+    1. Go to your windows environment variables and create your BOT_TOKEN variable.
+    2. BOT_TOKEN = <your new telegram api content>
+
+12. Great!, now we have the AI part and the Telegram bot setup.
+    Next is to create the Python program that will interact with both the Telegram bot and the AI models.
+    1. Go to your best python code editor and create a file and call it ai_recetas.py
     2. Copy the following code:
+    
