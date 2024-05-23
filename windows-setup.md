@@ -210,11 +210,11 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
     2. Make sure that for the imports you have them installed in your python local installation.
        
-       Use the command **pip install (import_name) if not.**
+       Use the command **pip install (import_name)** if not yet installed.
 
 ----   
 
-14. Run the program, and if no errors, you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
+14. Run the Python program, and if no errors, you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
     
     **"Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex..."**
 
