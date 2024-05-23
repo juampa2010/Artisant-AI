@@ -1,4 +1,4 @@
-Start process
+- Start process - 
 ----
 How-to setup this example in your Windows LOCAL machine:
 This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
