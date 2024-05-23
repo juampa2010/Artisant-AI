@@ -9,7 +9,8 @@ Note that this process was tested on a Windows LOCAL machine which serves as the
 2. Run the OllamaSetup.exe file on your Windows machine. Approx: 198MB size.
 3. Follow the installation steps. Click Install to extract files and it will be installed in your machine.
 4. To do a quick check to see if it was properly installed go to a CMD or Powershell and type:
-   > ollama
+   
+  > ollama
 
   You should see something like this:
   Usage:
@@ -38,5 +39,26 @@ Note that this process was tested on a Windows LOCAL machine which serves as the
 5. Next step is to download the AI model or models that we are going to be using for this example.
    If you want to see the complete list of ollama.ai models go to: https://ollama.com/library
 
-   From the CMD / Powershell run these 2 commands.
-   We are going to have to Cooks, the expert one will be using latest llama3 ai model, the 
+   We are going to have to Cooks, the expert one will be using latest llama3 ai model, the novice onw will be using a llama2 ai model.
+   Diferences are in the number of parameters each of them are using. 
+   In this example we want to give more expertise to the expert cook than to the novice cook.
+
+   From the CMD / Powershell run these 2 below commands. Make sure you at least have 10GB disk free space to allocate both.
+   The 'run' command will try to run the model locally where you can start testing it by prompting.
+   If the model isn´t in your local installation it will be downloaded first (pulling manifest ...)
+   It will take some time to download the models to your local installation.
+
+   > ollama run llama3 
+   Sample prompt: >>> Hi, why water is transparent?
+   <You should see the answer>
+   >>> /bye
+
+   > ollama run llama2
+   Sample prompt: >>> Hi, why makes rainbow show those colors?
+   <You should see the answer>
+   >>> /bye
+
+   
+   
+   
+   
