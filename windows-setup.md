@@ -1,4 +1,4 @@
-Start process 
+**Start process**
 ----
 
 **How-to** setup this example in your Windows instance. Note that this was tested only on a Windows LOCAL machine which serves as the AI Server machine that contains a couple of AI models.
@@ -232,4 +232,4 @@ Note that process was mainly done for fun and learning purposes, and as an examp
 16. Wait a minute or so to obtain the response from the conversation AI model.
     
 ----
-End Process
+**End process**
