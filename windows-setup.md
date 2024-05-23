@@ -1,9 +1,8 @@
 Start process 
 ----
 
-How-to setup this example in your Windows LOCAL machine:
-
-This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
+**How-to** setup this example in your Windows LOCAL machine. Note that this was tested only on a Windows LOCAL machine which serves as the AI Server machine that contains a couple of AI models.
+Note that process was mainly done for fun and learning purposes, and as an example to have something to be running quickly.
 
 1. Go to https://ollama.com/ and download it.
    
