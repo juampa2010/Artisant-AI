@@ -176,8 +176,11 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     It should respond with:
     
     OK. Send me a list of commands for your bot. Please use this format:
+    
     command1 - Description
+    
     command2 - Another description
+    
     Send /empty to keep the list empty.
 
     2. Copy all the lines from the bot_comandos.txt file in the BotFather and send it.
