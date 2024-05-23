@@ -26,7 +26,9 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
      You should see something like this:
    
      Usage:
+   
        ollama [flags]
+   
        ollama [command]
    
      Available Commands:
