@@ -17,9 +17,13 @@ Welcome to my Recipes and Healthy Nutrition Chatbot!. I am an Artificial Intelli
 See what I can do for you in the 'Menu' of commands. Icon at the bottom left.
 
 &nbsp;&nbsp;**/quien_soy**: Chatbot overview
+
 &nbsp;&nbsp;**/listado_recetas**: Example recipes
+
 &nbsp;&nbsp;**/preguntar**: For a recipe or whatever you want
+
 &nbsp;&nbsp;**/cocineros_disponibles**: List of available AI Cooks.
+
 &nbsp;&nbsp; **/selecionar_cocinero**: Select an available AI Cook.
 
 
