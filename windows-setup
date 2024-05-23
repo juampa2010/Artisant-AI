@@ -1,9 +1,10 @@
-How-to process flow in a Windows LOCAL machine
+- Start - 
 
-Note that this process was tested on a Windows LOCAL machine which serves as the Server machine, and this process was done for fun and as an example to have something to be tested and running quickly.
+How-to setup this example in your Windows LOCAL machine:
+This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
 
 1. Go to https://ollama.com/ and download it.
-  Sign up with your email to get notified of new updates.
+  Sign up with your email to get notified of new updates if you want to.
   Select Windows (Preview) and download it to your Windows machine.
 
 2. Run the OllamaSetup.exe file on your Windows machine. Approx: 198MB size.
@@ -360,3 +361,14 @@ Note that this process was tested on a Windows LOCAL machine which serves as the
         # Bucle de escucha continuo para recibir y procesar mensajes de Telegram de manera persistente. No se utiliza Webhook.
         # El bot comunica en éste caso utilizando el mecanismo de polling (getUpdates), es decir le pregunta constantemente a Telegram si hay nuevos mensajes
         bot.infinity_polling() 
+
+13. Runt the program and if not errors you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
+    Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex...
+
+14. Test it from your Telegram bot.
+    Go to the list of commands and you should see the ones we set in BotFather.
+    Try sending /quien_soy and see if you get a reply
+    If yes, then all seems to be properly setup and you can continue testing with the rest of the commands.
+    Try sending /preguntar and after that ask for a new Cooking recipe.
+
+- End -
