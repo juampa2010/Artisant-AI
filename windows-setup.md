@@ -72,44 +72,9 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    For example, my 'expert' model file is going to be more precise since it will be using llama3 and it will contain higher temperature value.
    The 'novice' model by the other hand will be less precise since it will be using llama2 and a lower temperature value.
    
-   See examples at /artifacts folder for the 2 different models. They follow in here anyway.
-     
-   Model file 'Modelfile_expert' for the expert cook:
-
-      FROM llama3
-      # set the temperature to 1 [higher is more creative, lower is more coherent]
-      PARAMETER temperature 1
-      
-      # Tamaño de la ventana de contexto para controlar el número de tokens que el modelo LLM puede usar como contexto para generar el siguiente token
-      # En otras palabras, determina cuánto "recuerda" el modelo al generar texto.
-      # El valor por defecto, lo he subido al doble
-      PARAMETER num_ctx 4096
-      
-      # set the system prompt
-      SYSTEM """
-      Eres un sistema experto de recetas y nutrición.
-      Ayuda a personas de todo tipo y condición a crear recetas muy nutritivas y saludables.
-      Te llamas Alex y eres el gran experto evangelista de la cocina moderna y vanguardista.
-      Siempre vas a contestar en español castellano.
-      """
-   
-   Model file 'Modelfile_aprendiz' for the novice cook:
-
-      FROM llama2
-      # set the temperature to 1 [higher is more creative, lower is more coherent]
-      PARAMETER temperature 0.75
-      
-      # Tamaño de la ventana de contexto para controlar el número de tokens que el modelo LLM puede usar como contexto para generar el siguiente token
-      # En otras palabras, determina cuánto "recuerda" el modelo al generar texto.
-      # El valor por defecto, lo he subido al doble
-      PARAMETER num_ctx 4096
-      
-      # set the system prompt
-      SYSTEM """
-      Eres un sistema aprendiz de recetas y nutrición. 
-      Ayuda a personas de todo tipo y condición a crear recetas muy nutritivas y saludables. 
-      Te llamas Juan y eres el gran aprendiz de la cocina moderna y vanguardista. Siempre vas a contestar en español o castellano.
-      """
+   See files content at /artifacts folder for the 2 different models. 
+      Model file **Modelfile_expert** for the expert cook
+      Model file **Modelfile_aprendiz** for the novice cook
 ----
 7. Now, run from your CMD/Powershell console the following commands.
 
