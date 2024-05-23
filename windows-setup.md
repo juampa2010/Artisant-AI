@@ -82,9 +82,11 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 7. Now, run from your CMD/Powershell console the following commands.
 
    > ollama create alex_experto -f ./Modelfile_experto
+   
      We are creating a reference to the llama3 existing model but using the expert model file defined, so we are making AI model to be Cooking domain specific, with an expert cook.
 
-   > ollama create juan_aprendiz -f ./Modelfile_aprendiz 
+   > ollama create juan_aprendiz -f ./Modelfile_aprendiz
+   
      We are creating a reference to the llama2 existing model but using the novice model file defined, so we are making AI model to be Cooking domain specific, with a novice cook.
 ----
 8. If no issues found, you can list all the models using command:
