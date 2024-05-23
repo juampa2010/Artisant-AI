@@ -1,2 +1,11 @@
 **How-to process flow in a Windows LOCAL machine:**
 
+Note that this process was tested on a Windows LOCAL machine which serves as the Server machine, and this process was done for fun and as an example to have something to be tested and running quickly.
+
+1. Go to **https://ollama.com/** and download it.
+  Sign up with your email to get notified of new updates.
+  Select Windows (Preview) and download it to your Windows machine.
+
+2. Run the **OllamaSetup.exe** file on your Windows machine. Approx: 198MB size.
+3. Follow the installation steps.
+4. 
