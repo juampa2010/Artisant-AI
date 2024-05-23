@@ -74,9 +74,9 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    
    See files content at /artifacts folder for the 2 different models:
    
-      Model file **Modelfile_expert** for the expert cook
+      - Model file **Modelfile_expert** for the expert cook
 
-      Model file **Modelfile_aprendiz** for the novice cook
+      - Model file **Modelfile_aprendiz** for the novice cook
    
 ----
 7. Now, run from your CMD/Powershell console the following commands.
