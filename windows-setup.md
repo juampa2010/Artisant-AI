@@ -13,7 +13,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
 ----
 
-2. Run the OllamaSetup.exe file on your Windows machine.
+2. Run the **OllamaSetup.exe** file on your Windows machine.
    
    Follow the installation steps. Click Install to extract files and it will be installed in your machine.
 
@@ -21,7 +21,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
 3. To do a quick check to see if it was properly installed go to a CMD or Powershell and type:
    
-     > ollama
+     **ollama**
    
      You should see something like this:
    
@@ -54,11 +54,10 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
        help        Help about any command
    
      Flags:
+   
        -h, --help      help for ollama
    
        -v, --version   Show version information
-   
-     Use "ollama [command] --help" for more information about a command.
   
 ----
 
@@ -83,25 +82,25 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    
    It will take some time to download the models to your local installation.
 
-   > ollama run llama3
+   **ollama run llama3**
    
    Sample prompt: >>> Hi, why water is transparent?
    
-   <You should see an answer>
+   (You should see an answer)
       
-   >>> /bye
+   **/bye**
 
-   > ollama run llama2
+   **ollama run llama2**
    
    Sample prompt: >>> Hi, why makes rainbow show those colors?
    
-   <You should see the answer>
+   (You should see the answer)
       
-   >>> /bye
+   **/bye**
 
 ----
 
-5. Use one of your preferable Python coding editor and create a new python project and call it 'Chatbot_Cooking' for example.
+5. Use one of your preferable Python coding editor and create a new python project and call it **Chatbot_Cooking** for example.
 
 ----
 
@@ -109,9 +108,9 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
    Modelfiles are used by the AI models to parametrize your AI models making them domain specific.
    
-   For example, my 'expert' model file is going to be more precise since it will be using llama3 and it will contain higher temperature value.
+   For example, my **expert** model file is going to be more precise since it will be using llama3 and it will contain higher temperature value.
    
-   The 'novice' model by the other hand will be less precise since it will be using llama2 and a lower temperature value.
+   The **novice** model by the other hand will be less precise since it will be using llama2 and a lower temperature value.
    
    See files content at /artifacts folder for the 2 different models:
    
@@ -123,24 +122,24 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
 7. Now, run from your CMD/Powershell console the following commands.
 
-   > ollama create alex_experto -f ./Modelfile_experto
+    **ollama create alex_experto -f ./Modelfile_experto**
    
      We are creating a reference to the llama3 existing model but using the expert model file defined, so we are making AI model to be Cooking domain specific, with an expert cook.
 
-   > ollama create juan_aprendiz -f ./Modelfile_aprendiz
+    **ollama create juan_aprendiz -f ./Modelfile_aprendiz**
    
      We are creating a reference to the llama2 existing model but using the novice model file defined, so we are making AI model to be Cooking domain specific, with a novice cook.
 ----
 8. If no issues found, you can look at the list of all your LOCAL models using command:
 
-    > ollama list
+    **ollama list**
 
 ----
 
 9. Now the models are ready, and you can, as before, run the specific models, to give them a try.
 
   For example:
-   > ollama run alex_experto
+   **ollama run alex_experto**
    >>> Hi, who are you?
     Hola! Me llamo Alex y soy un sistema experto en recetas y nutrición. Soy el gran evangelista de la cocina moderna
     y vanguardista. Mi misión es ayudar a personas de todo tipo y condición a crear recetas muy nutritivas y
@@ -153,7 +152,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
 10. Next step is to jump into the bot creation and for that we will go to Telegram and search for BotFather bot.
 
-    1. In there send the command /newbot
+    1. In there send the command **/newbot**
        
     2. Give it a name, something different to the one we created, it can be something like Ejemplo_Recetas_AI or any other name you like.
        
@@ -169,7 +168,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
     Type the following command in the BotFather
     
-    /setcommands
+    **/setcommands**
     
     1. Select the new bot you are going to be sending the commands.
 
@@ -183,7 +182,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     
     Send /empty to keep the list empty.
 
-    2. Copy all the lines from the bot_comandos.txt file in the BotFather and send it.
+    2. Copy all the lines from the **bot_comandos.txt** file in the BotFather and send it.
        
     3. It should respond with Success! Command list updated. /help
 
@@ -197,7 +196,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     
     1. Go to your windows environment variables and create your BOT_TOKEN variable.
        
-       BOT_TOKEN = <your new telegram api content>
+       **BOT_TOKEN = (your new telegram api content)**
     
 ----
 
@@ -207,17 +206,17 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
     1. Go to your best python code editor and create a file and call it recetas_ai.py.
        
-        * File is located under artifacts folder, copy and paste it in your code editor.
+       File is located under artifacts folder, copy and paste it in your code editor.
 
     2. Make sure that for the imports you have them installed in your python local installation.
        
-       Use the command pip install <import_name> if not.
+       Use the command **pip install (import_name) if not.**
 
 ----   
 
 14. Run the program, and if no errors, you should see the following message indicating that the program is ready to accept commands from the Telegram bot 
     
-    "Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex..."
+    **"Running Ollama with Recetas_SD Bot de Pruebas y modelo LLM Alex..."**
 
 ----
 
@@ -225,11 +224,13 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     
     1. Go to the list of commands and you should see the ones we set in BotFather.
        
-    2. Try sending /quien_soy and see if you get a reply
+    2. Try sending **/quien_soy** and see if you get a reply
     
     If ypu get a reply, then all seems to be properly setup, and working fine, and you can continue testing with the rest of the commands.
     
-    Try sending /preguntar and after that ask for a new Cooking recipe.
+    Try sending **/preguntar** and after that ask for a new Cooking recipe.
 
+16. Wait a minute or so to obtain the response from the conversation AI model.
+    
 ----
 End Process
