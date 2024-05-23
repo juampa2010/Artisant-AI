@@ -1,4 +1,4 @@
-- Start - 
+- Start process - 
 
 How-to setup this example in your Windows LOCAL machine:
 This was only tested on a Windows LOCAL machine which serves as the AI Server machine, and this process was done for fun and for learning, and as an example to have something to be tested and running quickly.
@@ -371,4 +371,4 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
     If yes, then all seems to be properly setup and you can continue testing with the rest of the commands.
     Try sending /preguntar and after that ask for a new Cooking recipe.
 
-- End -
+- End Process -
