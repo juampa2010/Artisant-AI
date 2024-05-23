@@ -72,9 +72,12 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
    For example, my 'expert' model file is going to be more precise since it will be using llama3 and it will contain higher temperature value.
    The 'novice' model by the other hand will be less precise since it will be using llama2 and a lower temperature value.
    
-   See files content at /artifacts folder for the 2 different models. 
+   See files content at /artifacts folder for the 2 different models:
+   
       Model file **Modelfile_expert** for the expert cook
+
       Model file **Modelfile_aprendiz** for the novice cook
+   
 ----
 7. Now, run from your CMD/Powershell console the following commands.
 
