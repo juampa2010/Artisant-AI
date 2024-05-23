@@ -2,13 +2,9 @@
 Artisant-AI is a GitHub Repo dedicated to exploring the intersection of artificial intelligence (AI) and the artisan spirit of creativity. 
 AI has the potential to augment human creativity, serving as a powerful tool in the hands of artisans, creators, and innovators across various domains.
 
-**The AI Telegram Culinary Assistant Chatbot Example**
+**The AI Telegram Culinary Assistant Chatbot Example** - Try to replicate the steps, since this Chatbot might be not always available
 
-🍳 Introducing the AI Telegram Chatbot **'AI_Recetas_Pruebas'** - Your AI Culinary Assistant on Telegram! 🤖
-
-Discover endless culinary inspiration with the Chatbot **AI_Recetas_Pruebas**! 
-
-From global cuisines to dietary preferences, **AI_Recetas_Pruebas** Chatbot crafts personalized recipes just for you. Ready to cook up a storm? Let **AI_Recetas_Pruebas** Chatbot be your guide to delicious adventures in the kitchen! 🌟🍽️
+🍳 Introducing the AI Telegram Chatbot **'AI_Recetas_Pruebas'** - Your AI Culinary Assistant on Telegram! 🤖. Discover endless culinary inspiration with the Chatbot **AI_Recetas_Pruebas**!. From global cuisines to dietary preferences, **AI_Recetas_Pruebas** Chatbot crafts personalized recipes just for you. Ready to cook up a storm? Let **AI_Recetas_Pruebas** Chatbot be your guide to delicious adventures in the kitchen! 🌟🍽️
 
 Who am I? **/quien_soy**
 
