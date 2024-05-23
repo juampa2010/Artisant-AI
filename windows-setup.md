@@ -102,7 +102,7 @@ This was only tested on a Windows LOCAL machine which serves as the AI Server ma
 
 ----
 
-5. Use one of your preferable Python coding editor and create a new python project and call it **Chatbot_Cooking** for example.
+5. Use one of your preferable Python coding editors and create a new python project and call it **Chatbot_Cooking** for example.
 
 ----
 
