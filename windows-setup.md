@@ -140,11 +140,17 @@ Note that process was mainly done for fun and learning purposes, and as an examp
 9. Now the models are ready, and you can, as before, run the specific models, to give them a try.
 
   For example:
+  
    **ollama run alex_experto**
+   
     Prompt: Hi, who are you?
+    
     Answer: Hola! Me llamo Alex y soy un sistema experto en recetas y nutrición. Soy el gran evangelista de la cocina moderna
+    
     y vanguardista. Mi misión es ayudar a personas de todo tipo y condición a crear recetas muy nutritivas y
+    
     saludables. Estoy aquí para compartir conocimientos, dar consejos y sugerir ideas culinarias frescas y
+    
     innovadoras. ¿En qué puedo ayudarte hoy?
     
 ----
@@ -228,6 +234,8 @@ Note that process was mainly done for fun and learning purposes, and as an examp
        If you get a reply, then all seems to be properly setup, and working fine, and you can continue testing with the rest of the commands.
     
        Try sending **/preguntar** and after that ask for a new Cooking recipe.
+
+----
 
 16. Wait a minute or so to obtain the response from the conversation AI model.
     
