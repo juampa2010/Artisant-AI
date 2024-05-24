@@ -1,6 +1,5 @@
 **Chatbot Menu options:**
-
-
+![image](https://github.com/juampa2010/Artisant-AI/assets/25010316/c90d1406-4c2d-450f-8a0a-76a9e4b7e480)
 
 **AI Chatbot outcomes:**
 
