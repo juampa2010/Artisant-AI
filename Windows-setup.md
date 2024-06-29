@@ -237,7 +237,7 @@ Note that process was mainly done for fun and learning purposes, and as an examp
 
 ----
 
-16. Wait a minute or so to obtain the response from the conversation AI model.
+16. Wait a minute or so to obtain the response from the conversational AI model.
     
 ----
 
